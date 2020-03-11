@@ -1,2 +1,2 @@
 # Tap-of-War
-![alt text](https://github.com/LawrenceObote/Tap-of-War/blob/master/assets/GameWireFrame.pdf "Logo Title Text 1")
+![alt text](https://github.com/LawrenceObote/Tap-of-War/blob/master/assets/WireFrame/Home-Page.png "Logo Title Text 1")
