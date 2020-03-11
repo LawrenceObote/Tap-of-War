@@ -1,2 +1,2 @@
 # Tap-of-War
-Tug of War game played on your computer
+![alt text](https://github.com/LawrenceObote/Tap-of-War/blob/master/assets/GameWireFrame.pdf "Logo Title Text 1")
