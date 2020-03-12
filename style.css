@@ -59,4 +59,18 @@
     z-index: -10;
     margin-left: -400px;
 }
+.zones{
+    position: absolute;
+    width:0px;
+    height: 150px;
+    top: 100%;
+    border: 1px black solid;
+    background-color: black;
+}
+#leftZone{
+    left: 25%;
+}
+#rightZone{
+    left: 75%;
+}
 
