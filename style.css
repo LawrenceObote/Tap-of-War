@@ -1,0 +1,23 @@
+.wrapper{
+    position: relative;
+}
+.header {
+    width: 200px;;
+    margin: 0 auto;
+}
+.score{
+    position: relative;
+    top: 50%;
+}
+#player1Score{
+    position: absolute;
+    left: 25%;
+    top: 75%;
+    height: 100px;
+}
+#player2Score{
+    position: absolute;
+    right: 25%;
+    top: 75%;
+    height: 100px; 
+}
