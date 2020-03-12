@@ -1,6 +1,8 @@
 # Tap-of-War
 Tap of War Game ![alt text](https://github.com/LawrenceObote/Tap-of-War/blob/master/assets/WireFrame/Home-Page.png "Logo Title Text 1")
 Rules:
+
+
 -Two players or one player and a computer compete in an electronic game of Tug Of War
 
 -The first player to win 3 rounds wins the game
