@@ -1,37 +1,49 @@
 .wrapper{
-    position: relative;
+    position: fixed;
+    max-height: 1200px;
+    max-width: 1200px;
+    min-height: 1200px;
+    max-width: 1200px;
+    text-align: center;
+    align-items: center;
 }
 .header {
-    width: 200px;;
-    margin: 0 auto;
+    position: absolute;
+    width: 200px;
     text-align: center;
+    left: 600px;
+    margin-left: -100px;
+    
 }
-.score{
-    position: relative;
-    top: 50%;
-    text-align: center;
-}
+
 #player1Score{
     position: absolute;
-    left: 25%;
-    top: 75%;
+    left: 400px;
     height: 100px;
-    padding-top: 15%
+    margin: 0 auto;
+    top: 250px;
+    width: 150px;
+    text-align: center;
+    margin-left: -75px;
+    
 }
 #player2Score{
     position: absolute;
-    right: 25%;
-    top: 75%;
+    left: 800px;
     height: 100px;
-    padding-top: 15%; 
+    width: 150px;
+    margin: 0 auto;
+    top: 250px;
+    text-align: center;
+    margin-left: -75px; 
 }
 .countDown{
+    position: absolute;
     height: 101px;
-    padding-top: 25%;
-    align-self: center;
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
+    left: 600px;
+    width: 200px;
+    top: 400px;
+    margin-left: -100px;
 }
 .tapOfWarData{
     align-items: center;
@@ -41,8 +53,8 @@
     width: 100px;
     height: 150px;
     background-color: red;
-    top:100%;
-    left:50%;
+    top: 500px;
+    left: 600px;
     margin-left: -50px;
 }
 .tapOfWarBar{
@@ -52,8 +64,8 @@
     position: absolute;
     width: 800px;
     height: 148px;
-    top: 100%;
-    left: 50%;
+    top: 500px;
+    left: 600px;
     background-color: white;
     border: 2px black solid;
     z-index: -10;
@@ -63,15 +75,15 @@
     position: absolute;
     width:0px;
     height: 150px;
-    top: 100%;
+    top: 500px;
     border: 1px black solid;
     background-color: black;
 }
 #leftZone{
-    left: 25%;
+    left: 300px;
 }
 #rightZone{
-    left: 75%;
+    left: 900px;
 }
 
 
