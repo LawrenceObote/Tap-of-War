@@ -24,8 +24,14 @@
     top: 250px;
     width: 150px;
     text-align: center;
-    margin-left: -75px;
-    
+    margin-left: -75px;  
+}
+#p1Score{
+    position: absolute;
+    left: 400px;
+    width: 100px;
+    margin-left: -50px;
+    top: 260px;
 }
 #player2Score{
     position: absolute;
@@ -36,6 +42,13 @@
     top: 250px;
     text-align: center;
     margin-left: -75px; 
+}
+#p2Score{
+    position: absolute;
+    left: 800px;
+    width: 100px;
+    margin-left: -50px;
+    top: 260px;
 }
 .countDown{
     position: absolute;
