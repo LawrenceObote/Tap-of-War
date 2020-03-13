@@ -4,12 +4,17 @@ let redBox = document.getElementById("tapOfWarData");
 let position = 0;
 let arrayLeft = [83, 65, 87, 68];
 let arrayRight = [74, 73, 75, 76];
+let randomLeft = Math.floor(Math.random() * (4 - 0) + 0);
+let randomRight = Math.floor(Math.random() * (4 - 0) + 0);
+console.log(randomLeft);
 
 
 // redBox.onkeydown = function moveRedBox () {
 //     redBox.style.left = 'calc(600px + ' + vars + 'px';
 // }
 window.addEventListener('keydown', function moveRedBox(e) {
+let randomLeft = Math.floor(Math.random() * (3 - 0) + 0);
+console.log(randomLeft);
     if(e.keyCode === 65){
         position -= 50;
         redBox.style.left = 'calc(600px + ' + position + 'px';
