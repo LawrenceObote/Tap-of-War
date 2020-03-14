@@ -6,7 +6,7 @@ let p2Score = document.getElementById("p2Score");
 let countDown = document.getElementById("countDown");
 let position = 0;
 let arrayLeft = [83, 65, 87, 68];
-let arrayRight = [74, 73, 75, 76];
+let arrayRight = [73, 74, 75, 76];
 let randomLeft = Math.floor(Math.random() * (4 - 0) + 0);
 let randomRight = Math.floor(Math.random() * (4 - 0) + 0);
 console.log(randomLeft);
@@ -15,31 +15,57 @@ console.log(randomLeft);
 // redBox.onkeydown = function moveRedBox () {
 //     redBox.style.left = 'calc(600px + ' + vars + 'px';
 // }
+
 window.addEventListener('keydown', function moveRedBoxLeft(e) {
 let randomLeft = Math.floor(Math.random() * (3 - 0) + 0);
+let randomRight = Math.floor(Math.random() * (3-0) + 0);
 
 if (randomLeft === 0){
     if(e.keyCode === 83){
         position -= 50;
-        redBox.style.left = 'calc(600px + ' + position + 'px';
+        redBox.style.left = 'calc(600px + ' + position + 'px)';
     }
 }
 if (randomLeft === 1){
     if(e.keyCode === 65){
         position -= 50;
-        redBox.style.left = 'calc(600px + ' + position + 'px';
+        redBox.style.left = 'calc(600px + ' + position + 'px)';
     }
 } 
 if (randomLeft === 2){
     if(e.keyCode === 87){
         position -= 50;
-        redBox.style.left = 'calc(600px + ' + position + 'px';
+        redBox.style.left = 'calc(600px + ' + position + 'px)';
     }
 } 
 if (randomLeft === 3){
     if(e.keyCode === 68){
         position -= 50;
-        redBox.style.left = 'calc(600px + ' + position + 'px';
+        redBox.style.left = 'calc(600px + ' + position + 'px)';
+    }
+}
+if(randomRight === 0){
+    if(e.keycode === 73){
+        position += 50;
+        redBox.style.left = 'calc(600px + ' + position + 'px)';
+    }
+}
+if(randomRight === 1){
+    if(e.keycode === 74){
+        position += 50;
+        redBox.style.left = 'calc(600px + ' + position + 'px)';
+    }
+}
+if(randomRight === 2){
+    if(e.keycode === 75){
+        position += 50;
+        redBox.style.left = 'calc(600px + ' + position + 'px)';
+    }
+}
+if(randomRight === 3){
+    if(e.keycode === 76){
+        position += 50;
+        redBox.style.left = 'calc(600px + ' + position + 'px)';
     }
 }  
 
