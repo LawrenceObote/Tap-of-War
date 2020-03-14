@@ -33,6 +33,16 @@
     margin-left: -50px;
     top: 260px;
 }
+#p2Key{
+    position: absolute;
+    left: 800px;
+    height: 100px;
+    width: 150px;
+    margin: 0 auto;
+    top: 220px;
+    text-align: center;
+    margin-left: -75px;
+}
 #player2Score{
     position: absolute;
     left: 800px;
