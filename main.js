@@ -12,19 +12,21 @@ let randomRight = Math.floor(Math.random() * (4 - 0) + 0);
 let player1Wins = 0;
 let player2Wins = 0;
 let valueLeft = arrayLeft[Math.floor(Math.random() * arrayLeft.length)];
-document.getElementById("p1key".innerHTML = valueLeft);
+document.getElementById("p1Key").innerHTML = randomLetterLeft(valueLeft);
 let valueRight = arrayRight[Math.floor(Math.random() * arrayRight.length)];
+document.getElementById("p2Key").innerHTML = randomLetterRight(valueRight);
 
 
 
 
 document.addEventListener("keydown", event => {
     if(event.keyCode == valueLeft && position <= -350){
-        position-= 50;
         player1Wins++;
         position = 0;
+        document.getElementById("p1Score").innerHTML = "" + player1Wins;
+        redBox.style.left = 'calc(600px + ' + position + 'px)';
     }
-    if(event.keyCode == valueLeft) {
+    else if(event.keyCode == valueLeft) {
         position -= 50;
         redBox.style.left = 'calc(600px + ' + position + 'px)';
         valueLeft = arrayLeft[Math.floor(Math.random() * arrayLeft.length)];
@@ -34,11 +36,12 @@ document.addEventListener("keydown", event => {
 
 document.addEventListener("keydown", event => {
     if(event.keyCode == valueRight && position >= 350){
-        position += 50;
-        player1Wins++;
+        player2Wins++;
         position = 0;
+        document.getElementById("p2Score").innerHTML = "" + player2Wins;
+        redBox.style.left = 'calc(600px + ' + position + 'px)';
     }
-    if(event.keyCode == valueRight) {
+    else if(event.keyCode == valueRight) {
         position += 50;
         redBox.style.left = 'calc(600px + ' + position + 'px)';
         valueRight = arrayRight[Math.floor(Math.random() * arrayRight.length)];
