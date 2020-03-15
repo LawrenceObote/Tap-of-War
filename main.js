@@ -19,26 +19,30 @@ let valueRight = arrayRight[Math.floor(Math.random() * arrayRight.length)];
 
 
 document.addEventListener("keydown", event => {
+    if(event.keyCode == valueLeft && position <= -350){
+        position-= 50;
+        player1Wins++;
+        position = 0;
+    }
     if(event.keyCode == valueLeft) {
         position -= 50;
         redBox.style.left = 'calc(600px + ' + position + 'px)';
         valueLeft = arrayLeft[Math.floor(Math.random() * arrayLeft.length)];
         document.getElementById("p1Key").innerHTML = randomLetterLeft(valueLeft);
-        
-        
-
     }
 });
 
 document.addEventListener("keydown", event => {
+    if(event.keyCode == valueRight && position >= 350){
+        position += 50;
+        player1Wins++;
+        position = 0;
+    }
     if(event.keyCode == valueRight) {
         position += 50;
         redBox.style.left = 'calc(600px + ' + position + 'px)';
         valueRight = arrayRight[Math.floor(Math.random() * arrayRight.length)];
         document.getElementById("p2Key").innerHTML = randomLetterRight(valueRight);
-        
-        
-
     }
 });
 // window.addEventListener('keydown', function moveRedBoxLeft(e) {
