@@ -36,9 +36,6 @@ document.addEventListener("keydown", event => {
         redBox.style.left = 'calc(600px + ' + position + 'px)';
         valueRight = arrayRight[Math.floor(Math.random() * arrayRight.length)];
         document.getElementById("p2Key").innerHTML = randomLetterRight(valueRight);
-        if(valueRight === 73){
-
-        }
         
         
 
@@ -108,16 +105,16 @@ function randomLetterLeft(valueLeft) {
     }
 }
 function randomLetterRight(randomRight) {
-    if(randomRight === 0){
+    if(valueRight === 73){
         return "I";
     }
-    if(randomRight === 1){
+    if(valueRight === 74){
         return "J";
     }
-    if(randomRight === 2){
+    if(valueRight === 75){
         return "K";
     }
-    if(randomRight === 3){
+    if(valueRight === 76){
         return "L";
     }
 }

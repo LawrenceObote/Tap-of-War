@@ -15,7 +15,16 @@
     margin-left: -100px;
     
 }
-
+#p1Key{
+    position: absolute;
+    left: 400px;
+    height: 100px;
+    width: 150px;
+    margin: 0 auto;
+    top: 220px;
+    text-align: center;
+    margin-left: -75px;
+}
 #player1Score{
     position: absolute;
     left: 400px;
