@@ -3,8 +3,7 @@
 let redBox = document.getElementById("tapOfWarData");
 let p1Score = document.getElementById("p1Score");
 let p2Score = document.getElementById("p2Score");
-let countDown = document.getElementById("countDown");
-var position = 0;
+let position = 0;
 let arrayLeft = [65, 68, 87, 83];
 let arrayRight = [73, 74, 75, 76];
 let randomLeft = Math.floor(Math.random() * (4 - 0) + 0);
@@ -25,6 +24,7 @@ document.addEventListener("keydown", event => {
         position = 0;
         document.getElementById("p1Score").innerHTML = "" + player1Wins;
         redBox.style.left = 'calc(600px + ' + position + 'px)';
+        alert("Player 1 Wins!");
     }
     else if(event.keyCode == valueLeft) {
         position -= 50;
@@ -34,12 +34,14 @@ document.addEventListener("keydown", event => {
     }
 });
 
+
 document.addEventListener("keydown", event => {
     if(event.keyCode == valueRight && position >= 350){
         player2Wins++;
         position = 0;
         document.getElementById("p2Score").innerHTML = "" + player2Wins;
         redBox.style.left = 'calc(600px + ' + position + 'px)';
+        alert("Player 2 Wins!");
     }
     else if(event.keyCode == valueRight) {
         position += 50;
@@ -48,53 +50,7 @@ document.addEventListener("keydown", event => {
         document.getElementById("p2Key").innerHTML = randomLetterRight(valueRight);
     }
 });
-// window.addEventListener('keydown', function moveRedBoxLeft(e) {
-// let randomLeft = Math.floor(Math.random() * (3 - 0) + 0);
-// document.getElementById("p1Key").innerHTML = randomLetterLeft(randomLeft);
-// if (position == -350){
-//     player1Wins++;
-//     position = 0;
-//     redBox.style.left = 'calc(600px + ' + position + 'px)';
-//     let randomLeft = Math.floor(Math.random() * (3 - 0) + 0);
-//     document.getElementById("p1Key").innerHTML = randomLetterLeft(randomLeft);
-// }
 
-
-// if (randomLeft === 0){
-//     if(e.keyCode === 83){
-//         position -= 50;
-//         redBox.style.left = 'calc(600px + ' + position + 'px)';
-//         let randomLeft = Math.floor(Math.random() * (3 - 0) + 0);
-//         document.getElementById("p1Key").innerHTML = randomLetterLeft(randomLeft);
-//     }
-// }
-// else if (randomLeft === 1){
-//     if(e.keyCode === 65){
-//         position -= 50;
-//         redBox.style.left = 'calc(600px + ' + position + 'px)';
-//         let randomLeft = Math.floor(Math.random() * (3 - 0) + 0);
-//         document.getElementById("p1Key").innerHTML = randomLetterLeft(randomLeft);
-//     }
-// } 
-// else if (randomLeft === 2){
-//     if(e.keyCode === 87){
-//         position -= 50;
-//         redBox.style.left = 'calc(600px + ' + position + 'px)';
-//         let randomLeft = Math.floor(Math.random() * (3 - 0) + 0);
-//         document.getElementById("p1Key").innerHTML = randomLetterLeft(randomLeft);
-//     }
-// } 
-// else if (randomLeft === 3){
-//     if(e.keyCode === 68){
-//         position -= 50;
-//         redBox.style.left = 'calc(600px + ' + position + 'px)';
-//         let randomLeft = Math.floor(Math.random() * (3 - 0) + 0);
-//         document.getElementById("p1Key").innerHTML = randomLetterLeft(randomLeft);
-//     }
-// }
-
-// else return;
-// });
 
 function randomLetterLeft(valueLeft) {
 
@@ -126,42 +82,4 @@ function randomLetterRight(randomRight) {
     }
 }
 
-
-
-
-// window.addEventListener('keydown', function moveRedBoxRight(e) {
-//     let randomRight = Math.floor(Math.random() * (4 - 0) + 0);
-//     document.getElementById("p2Key").innerHTML = randomLetterRight(randomRight);
-//     if (position == 350){
-//         player2Wins++;
-//         position = 0;
-//         redBox.style.left = 'calc(600px + ' + position + 'px)';
-//     }
-//     if(randomRight === 0){
-//         if(e.keyCode === 73){
-//             position += 50;
-//             redBox.style.left = 'calc(600px + ' + position + 'px)';
-//         }
-//     }
-//     if(randomRight === 1){
-//         if(e.keyCode === 74){
-//             position += 50;
-//             redBox.style.left = 'calc(600px + ' + position + 'px)';
-//         }
-//     }
-//     if(randomRight === 2){
-//         if(e.keyCode === 75){
-//             position += 50;
-//             redBox.style.left = 'calc(600px + ' + position + 'px)';
-//         }
-//     }
-//     if(randomRight === 3){
-//         if(e.keyCode === 76){
-//             position += 50;
-//             redBox.style.left = 'calc(600px + ' + position + 'px)';
-//         }
-//     }
-
-//     else return;
-// });
 

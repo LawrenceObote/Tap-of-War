@@ -1,3 +1,11 @@
+body{
+    position: relative;
+    background-image: url("./assets/background.jpeg");
+}
+img{
+    position: fixed;
+    z-index: -100;
+}
 .wrapper{
     position: fixed;
     max-height: 1200px;
@@ -6,6 +14,10 @@
     max-width: 1200px;
     text-align: center;
     align-items: center;
+    font-family: 'Roboto Mono', monospace, serif;
+    color: white;
+    z-index: 1;
+
 }
 .header {
     position: absolute;
@@ -15,15 +27,25 @@
     margin-left: -100px;
     
 }
-#p1Key{
+#press1{
     position: absolute;
-    left: 400px;
+    left: 380px;
     height: 100px;
     width: 150px;
+    top: 220px;
+    margin: 0;
+    text-align: center;
+    margin-left: -75px;
+}
+#p1Key{
+    position: absolute;
+    left: 430px;
+    height: 100px;
+    width: 200px;
     margin: 0 auto;
     top: 220px;
     text-align: center;
-    margin-left: -75px;
+    margin-left: -100px;
 }
 #player1Score{
     position: absolute;
@@ -31,9 +53,9 @@
     height: 100px;
     margin: 0 auto;
     top: 250px;
-    width: 150px;
+    width: 200px;
     text-align: center;
-    margin-left: -75px;  
+    margin-left: -100px;  
 }
 #p1Score{
     position: absolute;
@@ -42,9 +64,19 @@
     margin-left: -50px;
     top: 260px;
 }
+#press2{
+    position: absolute;
+    left: 775px;
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+    top: 220px;
+    text-align: center;
+    margin-left: -100px;
+}
 #p2Key{
     position: absolute;
-    left: 800px;
+    left: 825px;
     height: 100px;
     width: 150px;
     margin: 0 auto;
@@ -56,11 +88,11 @@
     position: absolute;
     left: 800px;
     height: 100px;
-    width: 150px;
+    width: 200px;
     margin: 0 auto;
     top: 250px;
     text-align: center;
-    margin-left: -75px; 
+    margin-left: -100px; 
 }
 #p2Score{
     position: absolute;
@@ -84,10 +116,11 @@
     position: absolute;
     width: 100px;
     height: 150px;
-    background-color: red;
+    background-color: white;
     top: 500px;
     left: 600px;
     margin-left: -50px;
+    border-radius: 25px;
 }
 .tapOfWarBar{
     align-items: center;
@@ -98,17 +131,18 @@
     height: 148px;
     top: 500px;
     left: 600px;
-    background-color: white;
-    border: 2px black solid;
+    background-color: red;
+    border: 2px white solid;
     z-index: -10;
     margin-left: -400px;
+    border-radius: 25px;
 }
 .zones{
     position: absolute;
     width:0px;
     height: 150px;
     top: 500px;
-    border: 1px black solid;
+    border: 1px white solid;
     background-color: black;
 }
 #leftZone{
